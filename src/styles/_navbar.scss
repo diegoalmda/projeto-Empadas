@@ -1,0 +1,125 @@
+.navBar {
+  z-index: 2;
+  background-color: #fad2b1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+
+  @media screen and (max-width: 1000px) {
+    transition: all .4s ease-in-out;
+    height: 220px;
+  }
+
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+    .logo {
+      padding-left: 1rem;
+      
+      img {
+        width: 200px;
+
+        @media screen and (max-width: 1000px) {
+          width: 150px;
+        }
+        
+      }
+    }
+
+    .nav-items {
+      flex: 3;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      font-size: 2rem;
+
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+      }
+
+      .nav-item {
+
+        .active {
+          color: #790000;
+          text-decoration: underline;
+          text-decoration-color: #790000;        
+        }
+
+        #navButton {
+          &:hover {
+            cursor: pointer;
+            color: #790000;
+          }
+        }
+
+        #count {
+          margin-left: -2rem;
+          margin-top: 1.2rem;
+          position: absolute;
+          font-size: .7rem;
+          background-color: #790000;
+          color: #fff;
+          padding: .2rem .25rem;
+          border-radius: 50%;
+        }
+        
+        .selected-items {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 50px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: #313131;
+
+          &:hover {
+            color: #790000;
+            text-decoration: underline;
+            text-decoration-color: #790000;
+          }
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 1rem 1.5rem 0;
+
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+
+      .icon-holder {
+        margin-right: 1rem;
+        .icon {
+          font-size: 2.8rem;
+          color: #790000;
+          transition: all 0.2s ease-in-out;
+        }
+        .fb:hover {
+          color: #0000ff;
+        }
+        .inst:hover {
+          color: #e00c99;
+        }
+      }
+    }
+  }
+}

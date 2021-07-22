@@ -1,0 +1,17 @@
+.Title {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    color: #313131;
+    // text-decoration: underline;
+    // text-decoration-color: #790000;
+    // background-color: #f8e9d6;
+
+    &::after {
+        z-index: 0;
+        content: "";
+        width: 80%;
+        background-color: #790000;
+        height: .5rem;
+        position: absolute;
+    }
+}

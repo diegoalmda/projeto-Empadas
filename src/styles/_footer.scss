@@ -1,0 +1,100 @@
+.footer-container {
+    background-color: #dadad6;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem .5rem 2rem;
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        @media screen and (max-width: 800px) {
+            transition: all .4s ease-in-out;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .image-logo {
+            flex: 1;
+            padding-bottom: 3rem;
+            img {
+                max-width: 300px;
+                width: 70%;
+            }
+        }
+
+        .sac {
+            flex: 1;
+            @media screen and (max-width: 800px) {
+                margin-bottom: 2rem;
+            }
+
+            p {
+                padding: .3rem 0;
+            }
+        }
+
+        .social-icons {
+            flex: 1;
+        }
+    }
+
+    .social-icons {
+        @media screen and (max-width: 800px) {
+            margin-bottom: 2rem;
+        }
+  
+        .icon-holder {
+          margin-right: 1rem;
+          .icon {
+            font-size: 2.8rem;
+            color: #790000;
+            transition: all 0.2s ease-in-out;
+          }
+          .fb:hover {
+            color: #0000ff;
+          }
+          .inst:hover {
+            color: #e00c99;
+          }
+        }
+    }
+
+    .footer-menu {
+
+        .nav-items {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .nav-item {
+                margin: 2rem 2rem 2rem 0;
+
+                a {
+                    text-decoration: none;
+                    color: #790000;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy {
+        align-self: center;
+        text-align: center;
+        font-size: .8rem;
+    }
+}
